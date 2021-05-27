@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:rgb(15, 15, 51);
+}
+
+.title {
+    font-family: 'Orbitron', sans-serif;
+}
+
+#board {
+    background: rgb(16, 17, 83);
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    border-style: dotted;
+}
+
+.cells {
+    display: inline-flex;
+}
+
+.cell {
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    background: rgb(18, 5, 37);
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+#quit-box, #win-box, #lost-box {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(158, 45, 3);
+    opacity: 0.8;
+    z-index: 9999;
+    border: 10px rgb(75, 55, 49);
+    border-radius: 10px;
+    border-style: dashed;
+    display: none;
+}
+
+#win-box, #lost-box {
+    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#win-box .container {
+    color: rgb(248, 192, 192);
+    position: relative;
+    top: 15%;
+}
+
+.score-cards {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 55px;
+}
+
+#score-card {
+    margin: 10px;
+    height: 68px;
+    background: rgb(15, 3, 70);
+    border: 3px solid black;
+    border-style: dotted;
+    border-radius: 10px;
+    transform: translate(-50%);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#score, #high-score {
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;   
+}
+
+#score {
+    width: 80px;
+}
+
+#high-score {
+    width: 90px
+}
+
+.quit-box-btn {
+    margin-right: 10px;
+}
